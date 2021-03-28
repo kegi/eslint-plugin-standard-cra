@@ -57,11 +57,11 @@ Add this in `.vscode/settings.json`
 
 ## React components
 - 🔴 React files need extension `.tsx`
-- 🔴 `arrow-functions` are required for all components
+- 🔴 `arrow-functions` are mandatory for components
 - 🔴 Component name need to be in Pascal case (ex: `<MyComponentName />`)
 - 🔴 No [dangerous](https://reactjs.org/docs/dom-elements.html)  properties
 - 🔴 No children in void DOM element. (ex: `<br> forbidden </br>`)
-- 🔴 React fragments need to be simplified. (ex: `<> Allowed </>`)
+- 🔴 React fragments need to be simplified. (ex: `<> ... </>`)
 - 🟡 Only 1 nested component per line
 - 🟡 No useless closing tag (ex: `<Foo></Foo>`)
 - 🟡 No useless fragments
@@ -70,7 +70,7 @@ Add this in `.vscode/settings.json`
 - 🔴 No URL starting with `javascript:` in href prop
 - 🟡 No single quote for props
 - 🟡 No `style` prop
-- 🟡 Array indexes in `key` prop
+- 🟡 No Array indexes in `key` prop
 - 🟡 No useless Boolean prop (ex: `<Comp forbidden={true} />`)
 - 🟡 No useless curly braces in props (ex: `<Comp forbidden={'string'} />`)
 - 🟡 Maximum 2 props per line
@@ -79,7 +79,7 @@ Add this in `.vscode/settings.json`
 - 🟡 2 spaces indentation
 - 🟡 Multiple indentation rules, see below:
 
-```typescript
+```tsx
 const MyComponent: React.FC<MyComponentProps> = ({
   foo,
   bar,
