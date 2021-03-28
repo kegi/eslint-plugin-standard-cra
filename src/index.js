@@ -5,19 +5,17 @@
  'use strict'
 
  const cratsBase = {
-   myConfig: {
-     plugins: [
-       'react',
-       'react-hooks',
-     ],
-     parserOptions: {
-       project: './tsconfig.json',
-     },
-     extends: [
-       'plugin:react/recommended',
-       'standard-with-typescript',
-     ],
-   },
+  plugins: [
+    'react',
+    'react-hooks',
+  ],
+  parserOptions: {
+    project: './tsconfig.json',
+  },
+  extends: [
+    'plugin:react/recommended',
+    'standard-with-typescript',
+  ],
  }
  
  module.exports = {
