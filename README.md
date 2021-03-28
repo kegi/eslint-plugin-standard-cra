@@ -2,10 +2,10 @@
 > **StandardJS for CRA + TS**
 
 ## Overview
-- Designed for `React CRA`
-- Designed for `TypeScript`
-- Extends `StandardJS` (with **Comma Dangling** enabled)
-- **Strict** rules for `React + JSX` (*optional*)
+- Designed for **`React CRA`**
+- Designed for **`TypeScript`**
+- Extends **`StandardJS`** (with **Comma Dangling** enabled)
+- **Strict** rules for **`React + JSX`** (*optional*)
 
 ## Installation
 
@@ -15,37 +15,39 @@ yarn add eslint-plugin-standard-cra --dev
 npm install eslint-plugin-standard-cra --dev
 ```
 
-`.eslintrc.js`
+> **.eslintrc.js**
+> 
+> ```javascript
+> module.exports = {
+>   extends: [
+>     'plugin:standard-cra/recommended',
+>   ],
+> }
+> ```
 
-```javascript
-module.exports = {
-  extends: [
-    'plugin:standard-cra/recommended',
-  ],
-}
-```
-> ℹ Select '`plugin:standard-cra/base`' if you don't want to include the custom rules for React + JSX.
 
-`package.json`
-```json
-{
-  "scripts": {
-    "lint": "eslint src",
-    "lint:fix": "eslint --fix src",
-  }
-}
-```
+> **package.json**
+> 
+> ```json
+> {
+>   "scripts": {
+>     "lint": "eslint src",
+>     "lint:fix": "eslint --fix src",
+>   }
+> }
+> ```
 
 ## VSCode
 Install [EsLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
-Add this in `.vscode/settings.json`
-```json
-{
-  "eslint.format.enable": true,
-  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
-}
-```
+> **.vscode/settings.json**
+> 
+> ```json
+> {
+>   "eslint.format.enable": true,
+>   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+> }
+> ```
 
 ## Rules
 
@@ -83,26 +85,21 @@ const MyComponent: React.FC<MyComponentProps> = ({
   foo,
   bar,
   ...props
-}) => {
-  return (
-    <>
-      <span id="id" className="myClass">
-        text
-        <strong>bold</strong>
-      </span>
+}) => (
+  <>
+    <span id="id" className="myClass">
+      text <strong>bold</strong>
+    </span>
 
-      { ' legal' }
-
-      { foo && (
-        <FooComponent
-          data-foo="foo"
-          bar={bar}
-          baz
-          onClick={() => { handleClick() }}
-          {...props}
-        />
-      ) }
-    </>
-  )
-}
+    { foo && (
+      <FooComponent
+        data-foo="foo"
+        bar={bar}
+        baz
+        onClick={() => { handleClick() }}
+        {...props}
+      />
+    ) }
+  </>
+)
 ```

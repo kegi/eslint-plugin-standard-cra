@@ -53,10 +53,9 @@
          'react/jsx-fragments': ['error', 'syntax'],
          'react/jsx-indent': ['warn', 2, { checkAttributes: true, indentLogicalExpressions: true }],
          'react/jsx-indent-props': ['warn', 2],
-         'react/jsx-max-props-per-line': ['warn', { maximum: 2, when: 'always' }],
+         'react/jsx-max-props-per-line': ['warn', { maximum: 1, when: 'multiline' }],
          'react/jsx-no-script-url': 'error',
          'react/jsx-no-useless-fragment': 'warn',
-         'react/jsx-one-expression-per-line': ['warn', { allow: 'single-child' }],
          'react/jsx-pascal-case': 'error',
          'react/jsx-props-no-multi-spaces': 'warn',
          'react/jsx-tag-spacing': ['warn', {
