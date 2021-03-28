@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-standard-cra",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "ESLint plugin for StandardJS for React CRA + TypeScript",
   "repository": {
     "type": "git",
@@ -8,11 +8,13 @@
   },
   "license": "MIT",
   "author": "Kevin Gilbert",
-  "main": "src/index.js",
+  "main": "index.js",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin",
+    "Standard",
+    "StandardJS",
     "React",
     "CRA",
     "Typescript",
