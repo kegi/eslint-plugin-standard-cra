@@ -33,7 +33,6 @@
 
          'jsx-quotes': ['warn', 'prefer-double'],
 
-         'react/forbid-component-props': ['warn', { forbid: ['style'] }],
          'react/function-component-definition': ['error', { namedComponents: 'arrow-function', unnamedComponents: 'arrow-function' }],
          'react/no-array-index-key': 'error',
          'react/no-danger': 'error',

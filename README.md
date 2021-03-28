@@ -69,7 +69,6 @@ Add this in `.vscode/settings.json`
 ## React component props
 - 🔴 No URL starting with `javascript:` in href prop
 - 🟡 No single quote for props
-- 🟡 No `style` prop
 - 🟡 No Array indexes in `key` prop
 - 🟡 No useless Boolean prop (ex: `<Comp forbidden={true} />`)
 - 🟡 No useless curly braces in props (ex: `<Comp forbidden={'string'} />`)
