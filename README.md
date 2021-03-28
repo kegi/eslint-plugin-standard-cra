@@ -1,32 +1,32 @@
-# eslint-plugin-standard-crats
+# eslint-plugin-standard-cra
 > **StandardJS for CRA + TS**
 
 ## Overview
-- Designed for React CRA
-- Designed for TypeScript
-- Extends StandardJS
-- Comma Dangling enabled
-- Strict rules for React and JSX
+- Designed for `React CRA`
+- Designed for `TypeScript`
+- Extends `StandardJS` (with **Comma Dangling** enabled)
+- **Strict** rules for `React + JSX` (*optional*)
 
 ## Installation
 
-1) Install
 ```bash
-yarn add eslint-plugin-standard-crats --dev
+yarn add eslint-plugin-standard-cra --dev
 # OR
-npm install eslint-plugin-standard-crats --dev
+npm install eslint-plugin-standard-cra --dev
 ```
 
-2) Add `.eslintrc.js` at the root of your react project
+`.eslintrc.js`
+
 ```javascript
 module.exports = {
   extends: [
-    'plugin:standard-crats/recommended',
+    'plugin:standard-cra/recommended',
   ],
 }
 ```
+> ℹ Select '`plugin:standard-cra/base`' if you don't want to include the custom rules for React + JSX.
 
-3) Add this in `package.json` > `scripts` :
+`package.json`
 ```json
 {
   "scripts": {
@@ -36,7 +36,7 @@ module.exports = {
 }
 ```
 
-### VSCode
+## VSCode
 Install [EsLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 Add this in `.vscode/settings.json`
@@ -53,7 +53,7 @@ Add this in `.vscode/settings.json`
 2) [StandardJS](https://standardjs.com/) (+TypeScript rules)
 3) See rules list below
 
-# Strict React+JSX rules
+# Strict React + JSX rules
 
 ## React components
 - 🔴 React files need extension `.tsx`

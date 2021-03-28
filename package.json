@@ -1,21 +1,26 @@
 {
-  "version": "1.0.1",
-  "name": "eslint-plugin-standard-crats",
-  "description": "StandardJS for CRA + TS",
+  "name": "eslint-plugin-standard-cra",
+  "version": "1.0.3",
+  "description": "ESLint plugin for StandardJS for React CRA + TypeScript",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kegi/eslint-plugin-standard-cra.git"
+  },
   "license": "MIT",
   "author": "Kevin Gilbert",
   "main": "src/index.js",
   "keywords": [
     "eslint",
     "eslintplugin",
-    "eslint-plugin"
+    "eslint-plugin",
+    "React",
+    "CRA",
+    "Typescript",
+    "TSX"
   ],
   "dependencies": {
     "eslint-config-standard-with-typescript": "^20.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1"
-  },
-  "engines": {
-    "node": ">=0.10.0"
   }
 }

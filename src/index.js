@@ -4,7 +4,7 @@
  */
  'use strict'
 
- const cratsBase = {
+ const base = {
    plugins: [
      'react',
      'react-hooks',
@@ -25,9 +25,9 @@
  
  module.exports = {
    configs: {
-     base: cratsBase,
+     base,
      recommended: {
-       ...cratsBase,
+       ...base,
        rules: {
          'comma-dangle': ['warn', 'always-multiline'],
 
