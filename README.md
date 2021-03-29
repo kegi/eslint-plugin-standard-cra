@@ -1,5 +1,5 @@
 <h1 align="center">eslint-plugin-standard-cra</h1>
-<p align="center">A single dev dependency for strict and modern <strong>React</strong> linting bases on <strong>StandardJS</strong></p>
+<p align="center">A single dev dependency for strict and modern <strong>React</strong> linting based on <strong>StandardJS</strong></p>
 <p align="center">
 <img src="https://img.shields.io/badge/React+JSX-ON-success">
 <img src="https://img.shields.io/badge/Semi-OFF-important">
@@ -48,7 +48,7 @@ Install [EsLint extension](https://marketplace.visualstudio.com/items?itemName=d
 > ```json
 > {
 >   "eslint.format.enable": true,
->   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+>   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
 > }
 > ```
 
