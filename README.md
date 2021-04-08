@@ -1,7 +1,8 @@
 <h1 align="center">eslint-plugin-standard-cra</h1>
 <p align="center">A single dev dependency for strict and modern <strong>React</strong> linting based on <strong>StandardJS</strong></p>
 <p align="center">
-<img src="https://img.shields.io/badge/React+JSX-ON-success">
+<img src="https://img.shields.io/badge/React+JSX-YES-success">
+<img src="https://img.shields.io/badge/Typescript_Support-YES-success">
 <img src="https://img.shields.io/badge/Semi-OFF-important">
 <img src="https://img.shields.io/badge/Comma--dangle-ON-success">
 
@@ -39,6 +40,7 @@ npm install eslint-plugin-standard-cra --save-dev
 >    },
 > }
 > ```
+\* *See below for list of presets*
 
 ## VSCode
 Install [EsLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
@@ -51,6 +53,19 @@ Install [EsLint extension](https://marketplace.visualstudio.com/items?itemName=d
 >   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
 > }
 > ```
+\* *You'll need to **reload VSCode** after applying new linting rules*
+<br /><br />
+
+## Presets
+
+| Preset | StandardJS | TypeScript | React/JSX strict rules |
+| --- | :-: | :-: | :-: |
+| plugin:standard-cra/recommended | ✔ | ✔ | ✔ |
+| plugin:standard-cra/base | ✔ | ✔ | ❌ |
+| plugin:standard-cra/js-recommended | ✔ | ❌ | ✔ |
+| plugin:standard-cra/js-base | ✔ | ❌ | ❌ |
+
+<br />
 
 ## Rules
 
@@ -59,14 +74,15 @@ Install [EsLint extension](https://marketplace.visualstudio.com/items?itemName=d
 3) React + JSX (see below)
 
 # Strict React + JSX rules
+> 🔴 error  🟡 warning
 
 ## React components
-- 🔴 React files need extension `.tsx`
+- 🔴 React file needs extension `.js .jsx` (if using TS: `.js .jsx .ts .tsx`)
 - 🔴 `arrow-functions` are mandatory for components
-- 🔴 Component name need to be in Pascal case (ex: `<MyComponentName />`)
+- 🔴 Component name needs to be in Pascal case (ex: `<MyComponentName />`)
 - 🔴 No [dangerous](https://reactjs.org/docs/dom-elements.html)  properties
 - 🔴 No children in void DOM element. (ex: `<br> forbidden </br>`)
-- 🔴 React fragments need to be simplified. (ex: `<> ... </>`)
+- 🔴 React fragment needs to be simplified. (ex: `<> ... </>`)
 - 🟡 No useless closing tag (ex: `<Foo></Foo>`)
 - 🟡 No useless fragments
 
