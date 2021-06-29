@@ -1,13 +1,14 @@
-<h1 align="center">eslint-plugin-standard-cra</h1>
-<p align="center">A single dev dependency for strict and modern <strong>React</strong> linting based on <strong>StandardJS</strong></p>
-<p align="center">
-<img src="https://img.shields.io/badge/React+JSX-YES-success">
-<img src="https://img.shields.io/badge/Typescript_Support-YES-success">
-<img src="https://img.shields.io/badge/Semi-OFF-important">
-<img src="https://img.shields.io/badge/Comma--dangle-ON-success">
-
-<img src="./header.png" />
-</p>
+<h1 style="text-align:center">eslint-plugin-standard-cra</h1>
+<p style="text-align:center">A single dev dependency for strict and modern <strong>React</strong> linting based on <strong>StandardJS</strong></p>
+<div style="text-align:center">
+  <img src="https://img.shields.io/badge/React+JSX-YES-success">
+  <img src="https://img.shields.io/badge/Typescript_Support-YES-success">
+  <img src="https://img.shields.io/badge/Semi-OFF-important">
+  <img src="https://img.shields.io/badge/Comma--dangle-ON-success">
+</div>
+<div style="text-align:center">
+  <img src="./header.png" />
+</div>
 
 ## Installation
 
