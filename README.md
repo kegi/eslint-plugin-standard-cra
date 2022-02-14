@@ -13,9 +13,9 @@
 ## Installation
 
 ```bash
-yarn add eslint-plugin-standard-cra --dev
+yarn add eslint-plugin-standard-cra
 # OR
-npm install eslint-plugin-standard-cra --save-dev
+npm install eslint-plugin-standard-cra
 ```
 
 > **package.json**

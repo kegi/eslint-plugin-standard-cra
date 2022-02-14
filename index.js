@@ -48,6 +48,7 @@ const baseRules = {
   'react/react-in-jsx-scope': 'off', // not needed with react 17
   'react/self-closing-comp': ['warn', { component: true, html: true }],
   'react/void-dom-elements-no-children': 'error',
+  'react/no-unescaped-entities': 'off',
 
   'react/jsx-boolean-value': ['warn', 'never'],
   'react/jsx-closing-bracket-location': ['warn', 'line-aligned'],
