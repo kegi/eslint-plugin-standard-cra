@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-standard-cra",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "ESLint plugin for StandardJS for React CRA + TypeScript",
   "repository": {
     "type": "git",
@@ -21,7 +21,7 @@
     "TSX"
   ],
   "dependencies": {
-    "eslint-config-standard-with-typescript": "^43.0.1",
+    "eslint-config-standard-with-typescript": "^37.0.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^6.1.1"
   }
