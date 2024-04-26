@@ -30,7 +30,7 @@ const tsBase = {
   ...base,
   extends: [
     ...base.extends,
-    'love',
+    'standard-with-typescript',
   ],
   parserOptions: {
     project: './tsconfig.json',
