@@ -94,6 +94,8 @@ const tsRules = {
   '@typescript-eslint/explicit-function-return-type': 'off',
   '@typescript-eslint/strict-boolean-expressions': 'off',
   '@typescript-eslint/consistent-type-definitions': 'off',
+  '@typescript-eslint/comma-dangle': 'off',
+  '@typescript-eslint/no-misused-promises': 'off',
 }
 
 module.exports = {

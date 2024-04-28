@@ -43,18 +43,33 @@ npm install eslint-plugin-standard-cra
 > ```
 \* *See below for list of presets*
 
+## Let react-scripts run with eslint errors.
+If you do not want eslint errors to block `yarn start` or `yarn build`...
+
+> **.env.local**
+> 
+> ```bash
+>DISABLE_ESLINT_PLUGIN=true
+> ```
+
 ## VSCode
 Install [EsLint extension](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 > **.vscode/settings.json**
 > 
 > ```json
-> {
->   "eslint.format.enable": true,
->   "editor.defaultFormatter": "dbaeumer.vscode-eslint"
-> }
+>{
+>  "eslint.format.enable": true,
+>  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+>  "[typescript]": {
+>    "editor.defaultFormatter": "dbaeumer.>vscode-eslint"
+>  },
+>  "[typescriptreact]": {
+>    "editor.defaultFormatter": "dbaeumer.>vscode-eslint"
+>  }
+>}
 > ```
-\* *You'll need to **reload VSCode** after applying new linting rules*
+\* *You'll need to **reload VSCode***
 <br /><br />
 
 ## Presets
@@ -78,7 +93,7 @@ Install [EsLint extension](https://marketplace.visualstudio.com/items?itemName=d
 > 🔴 error  🟡 warning
 
 ## React components
-- 🔴 React file needs extension `.js .jsx` (if using TS: `.js .jsx .ts .tsx`)
+- 🔴 React file needs extension `.js .jsx` (if using TS: `.ts .tsx`)
 - 🔴 `arrow-functions` are mandatory for components
 - 🔴 Component name needs to be in Pascal case (ex: `<MyComponentName />`)
 - 🔴 No [dangerous](https://reactjs.org/docs/dom-elements.html)  properties
