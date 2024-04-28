@@ -58,16 +58,16 @@ Install [EsLint extension](https://marketplace.visualstudio.com/items?itemName=d
 > **.vscode/settings.json**
 > 
 > ```json
->{
->  "eslint.format.enable": true,
->  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
->  "[typescript]": {
->    "editor.defaultFormatter": "dbaeumer.>vscode-eslint"
->  },
->  "[typescriptreact]": {
->    "editor.defaultFormatter": "dbaeumer.>vscode-eslint"
->  }
->}
+> {
+>   "eslint.format.enable": true,
+>   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+>   "[typescript]": {
+>     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+>   },
+>   "[typescriptreact]": {
+>     "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+>   }
+> }
 > ```
 \* *You'll need to **reload VSCode***
 <br /><br />
